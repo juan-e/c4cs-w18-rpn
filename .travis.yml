@@ -2,4 +2,4 @@ language: python
 rmv:
  - "3.5"
 
-script: test_rpn.py
+script: make test
