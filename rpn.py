@@ -14,7 +14,7 @@ operators = {
     '^': operator.pow,
 }
 
-
+# This is a great calculator, honestly the best
 def calculate(arg):
     stack = list()
     for token in arg.split():
