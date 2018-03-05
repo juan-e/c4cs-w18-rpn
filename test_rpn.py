@@ -1,6 +1,11 @@
 import unittest
 import rpn
 
+require 'coveralls'
+Coveralls.wear!
+
+# Your code here.
+
 class TestBasics(unittest.TestCase):
     def test_add(self):
         result = rpn.calculate('1 1 +')
