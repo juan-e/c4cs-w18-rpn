@@ -1,10 +1,7 @@
 #!/usr/bin/env python3
 import operator
-import logging
 import readline
 
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
 
 operators = {
     '+': operator.add,
@@ -28,7 +25,6 @@ def calculate(arg):
             arg1 = stack.pop()
             result = function(arg1, arg2)
             stack.append(result)
-        logger.info(stack)
     if len(stack) != 1:
         raise TypeError
 
