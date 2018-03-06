@@ -11,6 +11,7 @@ operators = {
     '*': operator.mul,
     '/': operator.truediv,
     '^': operator.pow,
+    '%': operator.mod,
 }
 
 # This is a great calculator, honestly the best
