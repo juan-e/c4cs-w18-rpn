@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import operator
 import logging
+import readline
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
