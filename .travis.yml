@@ -9,7 +9,7 @@ install:
 
 script:
  - make test
- - pytest  --cov
+ - pytest test_rpn.py --cov coveralls --cov-report
 
 after_success:
  - coveralls
