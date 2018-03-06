@@ -5,11 +5,11 @@ rmv:
 install: 
  - pip install python-coveralls
  - pip install coverage
- - pip install nose
+ - pip install pytest-cov
 
 script:
  - make test
- - pytest test_rpn.py --cov coveralls --cov-report
+ - pytest --cov
 
 after_success:
  - coveralls
