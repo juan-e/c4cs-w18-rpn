@@ -9,7 +9,7 @@ install:
 
 script:
  - make test
- - nosetests --with-coverage
+ - pytest  --cov
 
 after_success:
  - coveralls
