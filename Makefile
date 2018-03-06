@@ -1,4 +1,4 @@
 test:
-	python3 -m unittest coveralls -v
+	python3 -m unittest
 
 .PHONY: test
