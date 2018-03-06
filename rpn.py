@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 import operator
 import readline
-
+import colorama
+from colorama import Style
 
 operators = {
     '+': operator.add,
@@ -31,7 +32,14 @@ def calculate(arg):
     return stack.pop()
 def main():
     while True:
-       print(calculate(input("rmp calc> ")))
+       try:
+           print(calculate(input("rmp calc> ")))
+       except KeyError:
+           print('\033[31m' + 'Error:')
+           print('Please only enter numbers and operators:')
+           for op in operators:
+               print(op)
+           print(Style.RESET_ALL)
 
 if __name__ == '__main__':
     main()

@@ -8,6 +8,7 @@ install:
  - pip install coverage
  - pip install pytest-cov
  - pip install pyYaml
+ - pip intall colorama
 script:
  - make test
  - pytest --cov
