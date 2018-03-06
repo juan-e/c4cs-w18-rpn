@@ -4,6 +4,7 @@ rmv:
 
 install: 
  - pip install python-coveralls
+ - pip install coveralls
  - pip install coverage
  - pip install pytest-cov
 
