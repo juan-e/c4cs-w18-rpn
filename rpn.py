@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import operator
 import readline
-import colorama
 from colorama import Style
 
 operators = {
