@@ -9,6 +9,7 @@ install:
  - pip install pytest-cov
  - pip install pyYaml
  - pip install colorama
+ - python -m pip install colorama
 script:
  - make test
  - pytest --cov
